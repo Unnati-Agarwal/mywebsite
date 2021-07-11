@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+      <link rel="stylesheet" type="text/css" href="form-style.css">
+</head>
+<body>
+    <div class="heading">
+     <header>
+        <h2>Sign Up Form</h2>
+     </header>
+     <form method="POST" id="sign-up">
+        <label for="name"></label>
+        <input class="input" type="text" id="name" name="name" placeholder="Name" required>
+        <br>
+        <label for="email"></label>
+        <input class="input" type="email" id="email" name="email" placeholder="Email" required>
+        <br>
+        <label for="address"></label>
+        <input class="input" type="text number" id="address" name="address" placeholder="Address" required>
+        <br>
+        <label for="number"></label>
+        <input class="input" type="number" name="number" id="number" placeholder="Phone Number" required>
+        <div id="radiobuttons">
+            
+            <label class="labels" for="hard"><input class="radio" type="radio" name="code" id="hard" value="hardware"> Hardware</label><br>
+            
+            <label class="labels" for="soft"><input class="radio" type="radio" name="code" id="soft" value="software"> Software</label><br>
+            
+            <label class="labels" for="javascript"><input class="radio" type="radio" name="code" id="des" value="design"> Design</label>
+        </div>
+        <div class="skil">
+            <label for="skills">Choose a skill:</label>
+            <select id="skills" name="skills">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">Javascript</option>
+            </select>
+        </div>
+        <label for="pass"></label>
+        <input class="word" type="password" name="pass" id="pass" placeholder="Password" required><br>
+        <label for="confirm"></label>
+        <input class="word" type="password" name="confirm" id="confirm" placeholder="Confirm Password" required><br>
+        <div align="right">
+        <button  id="send" type="button submit">Send</button>
+        </div>
+    </form>
+    </div>
+</body>
